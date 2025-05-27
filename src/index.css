@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root{
+    --color-1: #ff0e02;
+    --color-2: #000;
+}
+
+[data-theme="dark"] {
+  --color-primary: var(--color-1);
+  --color-regal-black: var(--color-2);
+}
+
+@theme {
+  --color-primary: var(--color-2);
+  --color-regal-red: var(--color-1);
+}
