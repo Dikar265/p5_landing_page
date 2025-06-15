@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/typography";
+/*@import url("http://localhost:5173/src/assets/fonts/earwig%20factory%20rg.otf");
+*/
 :root{
     --color-1: #ff0e02;
     --color-2: #000;
@@ -9,8 +11,16 @@
   --color-primary: var(--color-1);
   --color-regal-black: var(--color-2);
 }
+@font-face {
+  font-family: "EarwigFactory";
+  src: url("/src/assets/fonts/earwig%20factory%20rg.otf") format("opentype");
+}
 
 @theme {
   --color-primary: var(--color-2);
   --color-regal-red: var(--color-1);
+  --text-shadow-behind : -2px -2px 0 white,
+      2px -2px 0 white,
+      -2px 2px 0 white,
+      2px 2px 0 white; 
 }

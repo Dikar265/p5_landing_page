@@ -3,7 +3,7 @@
 export const H1 = ({text, color}) => {
 
     return(
-        <h1 className={`text-7xl md:text-9xl font-bold ${color}`}>
+        <h1 className={`text-5xl md:text-9xl font-bold ${color}`}>
             {text}
         </h1>
     )
