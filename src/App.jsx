@@ -4,7 +4,10 @@ import { Header } from "./Components/Header";
 import CaracterSlider from "./Components/Slider";
 import { Video } from "./Components/Video";
 import Persona5AudioPlayer from "./Components/Persona5AudioPlayer";
+import Cards from "./Components/Cards";
+
 import { music } from "./Props/Music";
+import { palaces } from "./Props/palaces";
 function App() {
   
   
@@ -18,7 +21,7 @@ function App() {
       <CaracterSlider/>
       <CallingCard/>
       <Persona5AudioPlayer audioUrl={music} />
-      
+      <Cards props={palaces}/>
     </>
   );
 }

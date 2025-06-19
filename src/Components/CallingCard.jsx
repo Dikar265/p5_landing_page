@@ -1,6 +1,7 @@
 import pt5logo from "../assets/Phantom-Thieves-of-Hearts-Logo.png";
 import { useState, useRef } from "react";
 import { toPng } from "html-to-image";
+import ButtonCustom from "./buttonCustom";
 
 export default function CallingCard() {
   const [name, setName] = useState("WRITE Here");
@@ -74,7 +75,7 @@ export default function CallingCard() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border border-black w-96"
+          className="border border-black md:w-96"
           aria-label="Nombre para la calling card"
           placeholder="WRITE Here"
         />
@@ -82,13 +83,12 @@ export default function CallingCard() {
           type="text"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          className="border border-black w-96"
+          className="border border-black md:w-96"
           aria-label="Nombre para la calling card"
           placeholder="Date o anything"
         />
-        <button className="bg-red-700 p-5 text-white" onClick={handleCapture}>
-          Save Card
-        </button>
+        <ButtonCustom name={'Save Card'} action={handleCapture} />
+       
       </div>
     </section>
   );

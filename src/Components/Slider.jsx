@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Navigation } from "swiper/modules";
 
 import { EffectCoverflow } from "swiper/modules";
+import ButtonCustom from "./buttonCustom";
 
 export default function CaracterSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -70,6 +71,9 @@ export default function CaracterSlider() {
 function CaracterImg({ imgPhantom, imgSchool, name }) {
   const [isPhantom, setPhantom] = useState(false);
 
+  const hanldeSuit = () => {
+    setPhantom(!isPhantom)
+  }
   return (
     <div className="flex flex-col space-y-9">
       <div className="flex justify-center items-center relative w-auto h-96 md:h-[700px]">
@@ -81,12 +85,7 @@ function CaracterImg({ imgPhantom, imgSchool, name }) {
       </div>
       {imgPhantom && (
         <div className="flex justify-center">
-          <button
-            onClick={() => setPhantom(!isPhantom)}
-            className="px-4 py-2 bg-red-600 text-white rounded z-20"
-          >
-            {isPhantom ? "School" : "Metaverse"}
-          </button>
+          <ButtonCustom name={isPhantom ? "School" : "Metaverse"} action={hanldeSuit} />
         </div>
       )}
     </div>
