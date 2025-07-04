@@ -7,7 +7,7 @@ import Persona5AudioPlayer from "./Components/Persona5AudioPlayer";
 import Cards from "./Components/Cards";
 
 import { music } from "./Props/Music";
-import { palaces } from "./Props/palaces";
+import { palaces } from "./Props/Palaces";
 function App() {
   
   
