@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Navigation } from "swiper/modules";
 
 import { EffectCoverflow } from "swiper/modules";
-import ButtonCustom from "./buttonCustom";
+import ButtonCustom from "./ButtonCustom";
 
 export default function CaracterSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
