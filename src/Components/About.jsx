@@ -1,4 +1,4 @@
-import { TextAbout } from "../Props/text";
+import { TextAbout } from "../Props/Text";
 import rem_left from "../assets/rem_left.png";
 import rem_right from "../assets/rem_right.png";
 import both_rem from "../assets/both_rem.png";
