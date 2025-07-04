@@ -1,7 +1,7 @@
 import pt5logo from "../assets/Phantom-Thieves-of-Hearts-Logo.png";
 import { useState, useRef } from "react";
 import { toPng } from "html-to-image";
-import ButtonCustom from "./buttonCustom";
+import ButtonCustom from "./ButtonCustom";
 
 export default function CallingCard() {
   const [name, setName] = useState("WRITE Here");
