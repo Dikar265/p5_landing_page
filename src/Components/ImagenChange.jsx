@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import ButtonCustom from "./buttonCustom";
+import ButtonCustom from "./ButtonCustom";
 
 export default function ImagenChange({ img1, img2 }) {
   const [normal, setNormal] = useState(0);
